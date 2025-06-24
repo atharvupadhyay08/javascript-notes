@@ -8,4 +8,4 @@ console.log(balance.toString().length);
 console.log(balance.toFixed(2));
 
 const len = 123.8934;
-console.log(len.toPrecision(3))
+console.log(len.toPrecision(3)) // alot of information inspet console 
