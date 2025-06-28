@@ -23,9 +23,32 @@ const user = {
 // }
 // chai()
 
-//arrow function
-const chai = function(){
+//in another way of same function
+// const chai = function(){
       
-   let username="atharv"
-          console.log(this.username);
+//    let username="atharv"
+//           console.log(this.username);
+// }
+// chai()
+
+//arrow function
+const chai = () => {
+      let username = "atharv"
+      //console.log(this.username);//also gives undefined
+      console.log(this);
 }
+
+//chai()
+
+// const addTwo = (num1,num2)=>{
+//       return num1+num2
+// }
+
+// //implicit return using arrow function
+// const addtwo =(num1,num2)=> (num1+num2)
+// no need of return and {}
+const addtwo =(num1,num2) =>({username:"atharv"}) // object return karne ka treeka
+console.log(addtwo(3,4))
+
+// const myArray =[2, 5 ,3 ,7,8]
+// nyArray.forEach(()=>{})
