@@ -50,5 +50,4 @@ const chai = () => {
 const addtwo =(num1,num2) =>({username:"atharv"}) // object return karne ka treeka
 console.log(addtwo(3,4))
 
-// const myArray =[2, 5 ,3 ,7,8]
-// nyArray.forEach(()=>{})
+//  ay.forEach(()=>{})
