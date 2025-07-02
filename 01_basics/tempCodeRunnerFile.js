@@ -1,3 +1,6 @@
-user.welcomeMessage()
-user.username ="sam"
-user.we
+if(temperature <=50){
+//      // console.log("yes");
+// }
+// else{
+//       console.log("no");
+// }
