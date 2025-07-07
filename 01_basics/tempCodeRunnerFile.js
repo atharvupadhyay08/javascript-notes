@@ -1,6 +1,3 @@
-if(temperature <=50){
-//      // console.log("yes");
-// }
-// else{
-//       console.log("no");
+for (const key in programming) {
+//      console.log(programming[key]);
 // }
