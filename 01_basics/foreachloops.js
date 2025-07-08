@@ -1,4 +1,4 @@
-const coding = ["js","ruby","java","python","cpp"]
+//const coding = ["js","ruby","java","python","cpp"]
 //higher order function k liye hota h
 
 // (callbackfn: (value: T, index: number, array: readonly T[]) => void, thisArg?: any): void
@@ -31,19 +31,51 @@ const coding = ["js","ruby","java","python","cpp"]
 // cpp 4 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
 
 
-const myCoding = [
-      {langname:"javascript",
-            langfilename:"js"
-      },
-      {langname:"java",
-            langfilename:"java"
-      },
-      {langname:"python",
-            langfilename:"py"
-      },
-]
+// const myCoding = [
+//       {langname:"javascript",
+//             langfilename:"js"
+//       },
+//       {langname:"java",
+//             langfilename:"java"
+//       },
+//       {langname:"python",
+//             langfilename:"py"
+//       },
+// ]
 
-myCoding.forEach((item)=>{
+// myCoding.forEach((item)=>{
 
-console.log(item.langname);
+// console.log(item.langname);
+// })
+
+
+// const values = coding.forEach((item)=>{
+//       console.log(item);
+//       return item; // it will give undefined cuz foreach loop doesnt return 
+// })
+
+// console.log(values);
+
+const myNums =[1,2,3,4,5,6,7,8,9,10]
+
+// const newNums = myNums.filter((num)=> num > 4)  //this is similar to foreach and it return value
+// console.log(newNums);
+
+// const newNums = myNums.filter((num)=> {
+//       return num > 4
+// }  )
+
+
+const newNums = []
+
+myNums.forEach ((num) => {
+      if(num>4){
+            newNums.push(num)
+      }
 })
+console.log(newNums);
+
+
+
+
+
