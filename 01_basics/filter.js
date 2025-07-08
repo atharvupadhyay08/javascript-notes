@@ -14,6 +14,8 @@ const books = [
 ];
 
 //const userBooks = books.filter((bk)=> bk.genre ==='history');
-const userBooks = books.filter((bk)=> {return bk.publish >='1900' && bk.genre=='science'});
+// const userBooks = books.filter((bk)=> {return bk.publish >='1900' && bk.genre=='science'});
 
-console.log(userBooks);
+// console.log(userBooks);
+
+
