@@ -6,16 +6,23 @@
       <title>DOM learning</title>
       <style>
             .bg-black{
-                  background-color: #212121;
-                  color: aqua;
+                  background-color: white;
+                  color: red;
             }
       </style>
 </head>
 <body class="bg-black">
       <div >
-            <h1 id="title" class="head">this is my home page</h1>
+            <h1 id="title" class="head">this is my <span style="display:none">text test</span>home page</h1>
+            
             <p> welcome to the home page of this web page hope yall doing good 
             </p>
+            <input type="password" name="" id="">
+            <ul>
+                  <li class="list-item">one</li>
+                  <li class="list-item">two</li>
+                  <li class="list-item">three</li>
+            </ul>
       </div>
       <script>
             console.log(document.getElementById('title'));
@@ -26,6 +33,44 @@
 
           const title=  document.getElementById('title')
           console.log(title);
+          //title.style.backgroundColor = 'red'
+          //innertext 
+          // this is my home page'
+          // vs
+          //  innercontent
+          //this is my text testhome page'
+          //vs
+          //innerHTML
+          //this is my <span style="display:none">text test</span>home page'
+
+
+          //document.querySelector('h1')
+          //<h1 id="title" class="test heading">this is my <span style="display:none">text test</span>home page</h1>
+
+          //document.querySelector('#title')
+          //<h1 id="title" class="test heading">this is my <span style="display:none">text test</span>home page</h1>
+          
+          //document.querySelector('.head')
+          //<h1 id="title" class="test heading">this is my <span style="display:none">text test</span>home page</h1>
+
+          //document.querySelector('input[type="password"]')
+          //<input type="password" name="" id="">
+
+          //document.querySelector('ul')
+          //const myul = document.queryselector('li')
+          //const turnGreen = myul.queryselector('li')
+          //turnGreen.style.backgroundcolor= "green"
+          //turnGreen.style.padding= "10px"
+
+      //           const myul = document.querySelector('ul')
+      // undefined
+      // const turnGreen = myul.querySelector('li')
+      // undefined
+      // turnGreen.innerText 
+      // 'one'
+      // turnGreen.innerText ="five"
+      // 'five'
+
       </script>
 </body>
 </html>
