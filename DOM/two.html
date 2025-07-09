@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      
+      <title>DOM learning</title>
+      <style>
+            .bg-black{
+                  background-color: #212121;
+                  color: aqua;
+            }
+      </style>
+</head>
+<body class="bg-black">
+      <div >
+            <h1 id="title" class="head">this is my home page</h1>
+            <p> welcome to the home page of this web page hope yall doing good 
+            </p>
+      </div>
+      <script>
+            console.log(document.getElementById('title'));
+            console.log(document.getElementById('title').getAttribute('class'));
+            console.log(document.getElementById('title').setAttribute('class','test'));
+
+            console.log(document.getElementById('title').setAttribute('class','test heading'));
+
+          const title=  document.getElementById('title')
+          console.log(title);
+      </script>
+</body>
+</html>
