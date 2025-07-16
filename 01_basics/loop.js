@@ -19,7 +19,7 @@ const array2 =[[1,2,3],[4,5,6],[7,8,9]];
 
      // console.log("i am in j loop");
       //console.log(elemente);
-      i++; // ye lagana jarurui h kyuki fir wo i times bhi print kar dega 
+     // i++; // ye lagana jarurui h kyuki fir wo i times bhi print kar dega 
 //      }
 // }
 
