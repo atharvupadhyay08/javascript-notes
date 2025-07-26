@@ -15,6 +15,14 @@
       <div >
             <h1 id="title" class="head">this is my <span style="display:none">text test</span>home page</h1>
             
+             <!-- title.innerText
+                title.textContent  =>hidden contents pata chalte h
+                title.innerHTML =>html tags sahit  -->
+<h2>kai santosh kai mngtosh</h2>
+<h2>Lorem ipsum dolor sit amet.</h2>
+<h2>Lorem ipsum dolor sit amet.</h2>
+<h2>Lorem ipsum dolor sit amet.</h2>
+
             <p> welcome to the home page of this web page hope yall doing good 
             </p>
             <input type="password" name="" id="">
@@ -22,6 +30,7 @@
                   <li class="list-item">one</li>
                   <li class="list-item">two</li>
                   <li class="list-item">three</li>
+                  <li class="list-item">four</li>
             </ul>
       </div>
       <script>
@@ -74,3 +83,72 @@
       </script>
 </body>
 </html>
+
+<!-- document.querySelector('h2')
+<h2>​Lorem ipsum dolor sit amet.​</h2>​ 
+
+document.querySelector('h2')
+<h2>​Lorem ipsum dolor sit amet.​</h2>​
+
+document.querySelectorAll("h2")
+NodeList(4) [h2, h2, h2, h2]
+
+document.querySelector('p:first-child')
+kisi div k paragraph ke firstchild nikalne k liye 
+-->
+
+<!-- nodelist and htmlcollection and arrays are three different yet similar things 
+ const temp = document.querySelectorAll('li')
+undefined
+temp
+NodeList(3) [li.list-item, li.list-item, li.list-item]
+temp.style.color='green'
+VM2559:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:17
+(anonymous) @ VM2559:1Understand this error
+temp[0].style.color ='green'
+'green'
+const myh1 = document.querySelectorAll('h1')
+undefined
+myh1
+NodeList [h1#title.test.heading]
+myh1.style.color ='green'
+VM2845:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:18
+(anonymous) @ VM2845:1Understand this error
+myh1[0].style.color ='green'
+'green'
+temp.forEach(Function(l){})
+VM2975:1 Uncaught SyntaxError: missing ) after argument listUnderstand this error
+temp.forEach(function(l){l.style.backgroundColor ='green'})
+undefined-->
+
+<!-- document.getElementsByClassName('list-item')
+HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+const tempclasslist = document.getElementsByClassName('list-item')
+undefined
+tempclasslist
+HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+tempclasslist.forEach(function(li){
+    console.log(li)
+})
+VM3351:1 Uncaught TypeError: tempclasslist.forEach is not a function
+    at <anonymous>:1:15
+(anonymous) @ VM3351:1Understand this error -->
+
+<!-- 
+const tempclasslist = document.getElementsByClassName('list-item')
+undefined
+tempclasslist
+HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+Array.from(tempclasslist)
+(4) [li.list-item, li.list-item, li.list-item, li.list-item]0: li.list-item1: li.list-item2: li.list-item3: li.list-itemlength: 4[[Prototype]]: Array(0)at: ƒ at()concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()findLast: ƒ findLast()findLastIndex: ƒ findLastIndex()flat: ƒ flat()flatMap: ƒ flatMap()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toReversed: ƒ toReversed()toSorted: ƒ toSorted()toSpliced: ƒ toSpliced()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()with: ƒ with()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {at: true, copyWithin: true, entries: true, fill: true, find: true, …}[[Prototype]]: Object
+const myconvertedarray = Array.from(tempclasslist)
+
+undefined
+myconvertedarray
+(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+myconvertedarray.forEach(function (li) {
+    li.style.color ='orange'
+})
+undefined -->
